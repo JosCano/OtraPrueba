@@ -15,10 +15,10 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Empleado empleado1 = new Empleado("1245678M","Perico de los Palotes");
+        Empleado empleado1 = new Empleado("999999M","Jose Cano Gil");
         
-        empleado1.setDireccion("C/del Pez,6");
-        empleado1.setNumHijos(3);
+        empleado1.setDireccion("C/Castillo de aledo, ");
+        empleado1.setNumHijos(0);
         
         imprimir_emp(empleado1);
     }
