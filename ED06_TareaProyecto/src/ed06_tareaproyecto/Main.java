@@ -1,17 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ed06_tareaproyecto;
 
 /**
- *
- * @author ED06
+ * Clase Main que hace uso de un objeto de la clase empleado, inserta datos en el objeto
+ * y despues los muestra por pantalla.
+ * @author Jose Cano
+ * @version 1.0
  */
 public class Main {
 
     /**
+     * Metodo principal que crea un objeto de la clase empleado y muestra sus
+     * valores por pantalla.
      * @param args the command line arguments
      */
     public static void main(String[] args) {
@@ -23,6 +23,11 @@ public class Main {
         imprimir_emp(empleado1);
     }
 
+    /**
+     * Metodo que recibe como parametro un objeto empleado y muestra por pantalas
+     * sus valores.
+     * @param empleado1 Un objeto de la clase Empleado.
+     */
     public static void imprimir_emp(Empleado empleado1) {
         System.out.println("DNI: "+empleado1.getDni());
         System.out.println("Nombre: "+empleado1.getNombre());

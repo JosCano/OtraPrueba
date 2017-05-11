@@ -1,21 +1,29 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ed06_tareaproyecto;
 
 /**
- *
- * @author ED06
+ * Clase Empleado 
+ * 
+ * Contiene informacion de cada empleado
+ * 
+ * @author José Cano
+ * @version 1.0
  */
 public class Empleado {
-    private String dni;
-    private String nombre;
-    private String direccion;
-    private String cargo;
-    private int numHijos;
+    //Atributos que tendrán los objetos de la clase empleado
+    private String dni; //DNI del empleado
+    private String nombre; //Nombre del empleado
+    private String direccion; //Direccion del empleado
+    private String cargo; //Cargo que ocupa en la empresa
+    private int numHijos; //Numero de hijos que tiene a su cargo
     
+    /**
+     * Inicializa un objeto Empleado con los valores que se le pasan 
+     * como parametros.
+     * 
+     * @param dni dni del empleado
+     * @param nombre nombre del empleado
+     */
     public Empleado (String dni, String nombre){
         this.dni=dni;
         this.nombre=nombre;
@@ -23,6 +31,13 @@ public class Empleado {
         this.numHijos=0;
     }
     
+    /**
+     * Método que calcula el sueldo en funcion del cargo que ocupe
+     * y del numero de hijos que tenga. 
+     * 
+     * @param base el salario base del empleado
+     * @return Nos decuelve el sueldo que recibirá el empleado.
+     */
     public double calcula_sueldo(double base){
         double total=base;
         
@@ -36,6 +51,8 @@ public class Empleado {
     }
 
     /**
+     * Método que devuelve el dni del empleado
+     * 
      * @return the dni
      */
     public String getDni() {
@@ -43,6 +60,8 @@ public class Empleado {
     }
 
     /**
+     * Método que modifica el dni del empleado
+     * 
      * @param dni the dni to set
      */
     public void setDni(String dni) {
@@ -50,6 +69,8 @@ public class Empleado {
     }
 
     /**
+     * Método que devuelve el nombre del empleado
+     * 
      * @return the nombre
      */
     public String getNombre() {
@@ -57,6 +78,8 @@ public class Empleado {
     }
 
     /**
+     * Método que modifica el nombre del empleado
+     * 
      * @param nombre the nombre to set
      */
     public void setNombre(String nombre) {
@@ -64,6 +87,8 @@ public class Empleado {
     }
 
     /**
+     * Método que devuelve la dirección del empleado
+     * 
      * @return the direccion
      */
     public String getDireccion() {
@@ -71,6 +96,8 @@ public class Empleado {
     }
 
     /**
+     * Método que modifica la direcció del empleado
+     * 
      * @param direccion the direccion to set
      */
     public void setDireccion(String direccion) {
@@ -78,6 +105,7 @@ public class Empleado {
     }
 
     /**
+     * Método que devuelve el cargo del empleado
      * @return the cargo
      */
     public String getCargo() {
@@ -85,6 +113,8 @@ public class Empleado {
     }
 
     /**
+     * Método que modifica el cargo del empleado
+     * 
      * @param cargo the cargo to set
      */
     public void setCargo(String cargo) {
@@ -92,6 +122,7 @@ public class Empleado {
     }
 
     /**
+     * Método que devuelve el numero de hijos del empleado
      * @return the numHijos
      */
     public int getNumHijos() {
@@ -99,6 +130,8 @@ public class Empleado {
     }
 
     /**
+     * Método que modifica el numero de hijos del empleado
+     * 
      * @param numHijos the numHijos to set
      */
     public void setNumHijos(int numHijos) {
