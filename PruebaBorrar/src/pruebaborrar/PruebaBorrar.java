@@ -17,6 +17,7 @@ public class PruebaBorrar {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("Primera version de mi aplicacion");
+        System.out.println("Etiqueta 1");
     }
     
 }
